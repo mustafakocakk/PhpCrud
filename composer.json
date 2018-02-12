@@ -1,0 +1,22 @@
+{
+  "name": "themainframe/php-mvc-sample",
+  "authors": [
+    {
+      "name": "Damien Walsh",
+      "email": "me@damow.net"
+    }
+  ],
+  "require": {
+    "twig/twig": "^2.4"
+  },
+  "autoload": {
+    "psr-0": {
+      "": [
+        "controller/",
+        "model/",
+        "service/",
+        "./"
+      ]
+    }
+  }
+}

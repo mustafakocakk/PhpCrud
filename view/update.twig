@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<form action="/php-mvc-sample-master/update" method="post">
+    İd:<br>
+    <input type="text" name="id" value="{{ persons.u_id }}"><br>
+     First name:<br>
+    <input type="text" name="firstname" value="{{ persons.fname }}" >
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname"  value="{{ persons.lname}}" ><br>
+    <input class="btn btn-primary"  type="submit" value="update" ><br><br>
+    silmek için evet yazın<input type="text" name="secim"  >
+    <input class="btn btn-primary"  type="submit" value="delete" >
+
+</form>
+
+</body>
+</html>

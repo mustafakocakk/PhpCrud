@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>12413</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="ornek">
+      <ObjectId>16400</ObjectId>
+    </database>
+    <role id="4" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="5" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-02-03.23:51:39.289</IntrospectionTimestamp>
+      <IntrospectionStateNumber>8353</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="6" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="information_schema">
+      <ObjectId>12121</ObjectId>
+    </schema>
+    <sequence id="11" parent="5" name="student_id_seq">
+      <ObjectId>16411</ObjectId>
+      <StateNumber>8229</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <sequence id="12" parent="5" name="users_id_seq">
+      <ObjectId>16422</ObjectId>
+      <StateNumber>8347</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <BelongsToColumn>1</BelongsToColumn>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="13" parent="5" name="student">
+      <ObjectId>16413</ObjectId>
+      <StateNumber>8229</StateNumber>
+    </table>
+    <table id="14" parent="5" name="users">
+      <ObjectId>16424</ObjectId>
+      <StateNumber>8347</StateNumber>
+    </table>
+    <column id="15" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>8229</StateNumber>
+      <DefaultExpression>nextval(&apos;student_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>student_id_seq</SequenceName>
+    </column>
+    <column id="16" parent="13" name="name">
+      <Position>2</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>8229</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="17" parent="13" name="surname">
+      <Position>3</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>8229</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="18" parent="13" name="age">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>8229</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="19" parent="13" name="student_pkey">
+      <ObjectId>16420</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="20" parent="13" name="student_pkey">
+      <ObjectId>16421</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>8353</StateNumber>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+      <SequenceName>users_id_seq</SequenceName>
+    </column>
+    <column id="22" parent="14" name="fname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>8347</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="23" parent="14" name="lname">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>8347</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+  </database-model>
+</dataSource>
